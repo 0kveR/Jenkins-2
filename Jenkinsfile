@@ -12,7 +12,7 @@ pipeline {
 		}
 		stage('Build') {
 			steps {
-				sh "docker build -t ${IMAGE_NAME}:0.1.0 ."
+				sh "docker build -t ${IMAGE_NAME}-0.1.0 ."
 			}
 		}
 		stage('Test') {
